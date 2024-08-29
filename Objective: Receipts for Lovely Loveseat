@@ -1,0 +1,611 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "b8cbd48b",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.295098Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.294526Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.307899Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.306805Z"
+    },
+    "papermill": {
+     "duration": 0.02577,
+     "end_time": "2024-08-29T21:59:29.310463",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.284693",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 1: Let’s add in our first item, the Lovely Loveseat that is the store’s namesake. Create a variable called lovely_loveseat_description and assign to it the following string:\n",
+    "#Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white.\n",
+    "\n",
+    "lovely_loveseat_description = \"Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c035ff52",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.329377Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.328905Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.334104Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.332918Z"
+    },
+    "papermill": {
+     "duration": 0.018335,
+     "end_time": "2024-08-29T21:59:29.336827",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.318492",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 2: Great, now let’s create a price for the loveseat. Create a variable lovely_loveseat_price and set it equal to 254.00.\n",
+    "\n",
+    "lovely_loveseat_price = 254.00"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "9b80dabd",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.352936Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.352481Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.357637Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.356516Z"
+    },
+    "papermill": {
+     "duration": 0.016127,
+     "end_time": "2024-08-29T21:59:29.360173",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.344046",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 3: Let’s extend our inventory with another characteristic piece of furniture! Create a variable called stylish_settee_description and assign to it the following string:\n",
+    "# Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black.\n",
+    "\n",
+    "stylish_settee_description = \"Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "268cc596",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.377005Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.376099Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.381422Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.380082Z"
+    },
+    "papermill": {
+     "duration": 0.01662,
+     "end_time": "2024-08-29T21:59:29.383893",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.367273",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 4: Now let’s set the price for our Stylish Settee. Create a variable stylish_settee_price and assign it the value of 180.50.\n",
+    "\n",
+    "stylish_settee_price = 180.50"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "8e8aa8b6",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.399836Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.399417Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.404569Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.403551Z"
+    },
+    "papermill": {
+     "duration": 0.01586,
+     "end_time": "2024-08-29T21:59:29.407009",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.391149",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 5: Fantastic, we just need one more item before we’re ready for business. Create a new variable called luxurious_lamp_description and assign it the following:\n",
+    "# Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade\n",
+    "\n",
+    "luxurious_lamp_description = \"Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade.\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "95527264",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.422867Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.422450Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.427479Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.426329Z"
+    },
+    "papermill": {
+     "duration": 0.015692,
+     "end_time": "2024-08-29T21:59:29.429761",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.414069",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 6: Let’s set the price for this item. Create a variable called luxurious_lamp_price and set it equal to 52.15.\n",
+    "\n",
+    "luxurious_lamp_price = 52.15"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "35b94700",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.446148Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.445748Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.451330Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.450219Z"
+    },
+    "papermill": {
+     "duration": 0.01664,
+     "end_time": "2024-08-29T21:59:29.453835",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.437195",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 7: In order to be a business, we should also be calculating sales tax. Let’s store that in a variable as well. Define the variable sales_tax and set it equal to .088. That’s 8.8%.\n",
+    "\n",
+    "sales_tax = 0.088"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "ec8bc0fe",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.470036Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.469552Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.475064Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.473879Z"
+    },
+    "papermill": {
+     "duration": 0.016532,
+     "end_time": "2024-08-29T21:59:29.477589",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.461057",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 8: Our first customer is making their purchase! Let’s keep a running tally of their expenses by defining a variable called customer_one_total. Since they haven’t purchased anything yet, let’s set that variable equal to 0 for now.\n",
+    "\n",
+    "customer_one_total = 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "2ae9add7",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.493625Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.493158Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.498792Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.497652Z"
+    },
+    "papermill": {
+     "duration": 0.016918,
+     "end_time": "2024-08-29T21:59:29.501738",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.484820",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "### Task 9: We should also keep a list of the descriptions of things they’re purchasing. Create a variable called customer_one_itemization and set that equal to the empty string \"\". We’ll tack on the descriptions to this as they make their purchases.\n",
+    "\n",
+    "customer_one_itemization = \"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "7135e4cd",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.517763Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.517248Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.522563Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.521224Z"
+    },
+    "papermill": {
+     "duration": 0.016404,
+     "end_time": "2024-08-29T21:59:29.525252",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.508848",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 10: Our customer has decided they are going to purchase our Lovely Loveseat! Add the price to customer_one_total.\n",
+    "\n",
+    "customer_one_total += lovely_loveseat_price"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "a2b3bc6a",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.541537Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.541041Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.546495Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.545116Z"
+    },
+    "papermill": {
+     "duration": 0.016308,
+     "end_time": "2024-08-29T21:59:29.548964",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.532656",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 11: Let’s start keeping track of the items our customer purchased. Add the description of the Lovely Loveseat to customer_one_itemization.\n",
+    "\n",
+    "customer_one_itemization += lovely_loveseat_description"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "8c94e72e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.564892Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.564472Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.569544Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.568434Z"
+    },
+    "papermill": {
+     "duration": 0.015969,
+     "end_time": "2024-08-29T21:59:29.572020",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.556051",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 12: Our customer has also decided to purchase the Luxurious Lamp! Let’s add the price to the customer’s total.\n",
+    "\n",
+    "customer_one_total += luxurious_lamp_price"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "80811e16",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.587922Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.587464Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.593918Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.592863Z"
+    },
+    "papermill": {
+     "duration": 0.017124,
+     "end_time": "2024-08-29T21:59:29.596302",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.579178",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 13: Let’s keep the itemization up-to-date and add the description of the Luxurious Lamp to our itemization.\n",
+    "\n",
+    "customer_one_itemization += luxurious_lamp_description"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "913017d6",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.611918Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.611487Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.617006Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.615858Z"
+    },
+    "papermill": {
+     "duration": 0.016141,
+     "end_time": "2024-08-29T21:59:29.619464",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.603323",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 14: They’re ready to check out! Let’s begin by calculating sales tax. Create a variable called customer_one_tax and set it equal to customer_one_total times sales_tax.\n",
+    "\n",
+    "customer_one_tax = customer_one_total * sales_tax"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "2e5db347",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.635364Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.634906Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.639875Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.638798Z"
+    },
+    "papermill": {
+     "duration": 0.015962,
+     "end_time": "2024-08-29T21:59:29.642496",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.626534",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task 15: Add the sales tax to the customer’s total cost.\n",
+    "\n",
+    "customer_one_total += customer_one_tax"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "225b0f5f",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.659496Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.658260Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.664370Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.663173Z"
+    },
+    "papermill": {
+     "duration": 0.01726,
+     "end_time": "2024-08-29T21:59:29.666883",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.649623",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Customer One Items\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Task 16: Let’s start printing up their receipt! Begin by printing out the heading for their itemization. Print the phrase \"Customer One Items:\".\n",
+    "\n",
+    "print(\"Customer One Items\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "10efd948",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.683081Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.682626Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.688826Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.687449Z"
+    },
+    "papermill": {
+     "duration": 0.018097,
+     "end_time": "2024-08-29T21:59:29.692101",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.674004",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white.Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade.\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Task 17: Print customer_one_itemization.\n",
+    "\n",
+    "print(customer_one_itemization)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "8aee63ce",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.708751Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.708285Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.713981Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.712814Z"
+    },
+    "papermill": {
+     "duration": 0.017607,
+     "end_time": "2024-08-29T21:59:29.717041",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.699434",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Customer One Total:\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Task 18: Now add a heading for their total cost: Print out \"Customer One Total:\"\n",
+    "\n",
+    "print(\"Customer One Total:\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "0ae514bd",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-29T21:59:29.734028Z",
+     "iopub.status.busy": "2024-08-29T21:59:29.733599Z",
+     "iopub.status.idle": "2024-08-29T21:59:29.739568Z",
+     "shell.execute_reply": "2024-08-29T21:59:29.738294Z"
+    },
+    "papermill": {
+     "duration": 0.017798,
+     "end_time": "2024-08-29T21:59:29.742567",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.724769",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "333.09119999999996\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Task 19: Now print out their total! Our first customer now has a receipt for the things they purchased.\n",
+    "\n",
+    "print(customer_one_total)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "939c2486",
+   "metadata": {
+    "papermill": {
+     "duration": 0.007658,
+     "end_time": "2024-08-29T21:59:29.757654",
+     "exception": false,
+     "start_time": "2024-08-29T21:59:29.749996",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "**Congratulations! We created our catalog and served our first customer. We used our knowledge of strings and numbers to create and update variables. We were able to print out an itemized list and a total cost for our customer. Lovely!**"
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [],
+   "dockerImageVersionId": 30761,
+   "isGpuEnabled": false,
+   "isInternetEnabled": true,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 3.966956,
+   "end_time": "2024-08-29T21:59:30.185998",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-08-29T21:59:26.219042",
+   "version": "2.6.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
