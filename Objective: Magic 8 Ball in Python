@@ -1,1 +1,156 @@
-{"metadata":{"kernelspec":{"language":"python","display_name":"Python 3","name":"python3"},"language_info":{"name":"python","version":"3.10.14","mimetype":"text/x-python","codemirror_mode":{"name":"ipython","version":3},"pygments_lexer":"ipython3","nbconvert_exporter":"python","file_extension":".py"},"kaggle":{"accelerator":"none","dataSources":[],"dockerImageVersionId":30761,"isInternetEnabled":true,"language":"python","sourceType":"notebook","isGpuEnabled":false}},"nbformat_minor":4,"nbformat":4,"cells":[{"cell_type":"code","source":"# Task: We’ll be using the following 9 possible answers for our Magic 8-Ball:\n#\n#Yes - definitely\n#It is decidedly so\n#Without a doubt\n#Reply hazy, try again\n#Ask again later\n#Better not tell you now\n#My sources say no\n#Outlook not so good\n#Very doubtful\n\n# The output of the program will have the following format:\n#[Name] asks: [Question]\n#Magic 8-Ball’s answer: [Answer]","metadata":{"execution":{"iopub.status.busy":"2024-08-30T20:37:13.704159Z","iopub.execute_input":"2024-08-30T20:37:13.705447Z","iopub.status.idle":"2024-08-30T20:37:13.710567Z","shell.execute_reply.started":"2024-08-30T20:37:13.705378Z","shell.execute_reply":"2024-08-30T20:37:13.709153Z"},"trusted":true},"execution_count":3,"outputs":[]},{"cell_type":"code","source":"name = \"\"\n\nquestion = \"Is it going to happen?\"\n\nanswer = \"\"\n\nimport random\nrandom_number = random.randint(1,9)\n\nif random_number == 1:\n  answer = \"Yes - definitely\"\nelif random_number == 2:\n  answer = \"It is decidedly so\"\nelif random_number == 3:\n  answer = \"Without a doubt\"\nelif random_number == 4:\n  answer = \"Reply hazy, try again\"\nelif random_number == 5:\n  answer = \"Ask again later\"\nelif random_number == 6:\n  answer = \"Better not tell you now\"\nelif random_number == 7:\n  answer = \"My sources say no\"\nelif random_number == 8:\n  answer = \"Outlook not so good\"\nelif random_number == 9:\n  answer = \"Very doubtful\"\nelse:\n  answer = \"Error\"\n\nif question == \"\":\n  print(\"Please enter a question.\")\nelse:\n    if name == \"\":\n      print(\"Question: \" + question)\n    else:\n      print(name +\" asks: \" + question)\n    print(\"Magic 8-Ball's answer: \" + answer)","metadata":{"execution":{"iopub.status.busy":"2024-08-30T20:37:13.714678Z","iopub.execute_input":"2024-08-30T20:37:13.715836Z","iopub.status.idle":"2024-08-30T20:37:13.725041Z","shell.execute_reply.started":"2024-08-30T20:37:13.715781Z","shell.execute_reply":"2024-08-30T20:37:13.723931Z"},"trusted":true},"execution_count":4,"outputs":[{"name":"stdout","text":"Question: Is it going to happen?\nMagic 8-Ball's answer: It is decidedly so\n","output_type":"stream"}]}]}
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "5f220c2e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-30T20:38:50.878745Z",
+     "iopub.status.busy": "2024-08-30T20:38:50.877321Z",
+     "iopub.status.idle": "2024-08-30T20:38:50.886680Z",
+     "shell.execute_reply": "2024-08-30T20:38:50.884955Z"
+    },
+    "papermill": {
+     "duration": 0.019203,
+     "end_time": "2024-08-30T20:38:50.890507",
+     "exception": false,
+     "start_time": "2024-08-30T20:38:50.871304",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "# Task: We’ll be using the following 9 possible answers for our Magic 8-Ball:\n",
+    "#\n",
+    "#Yes - definitely\n",
+    "#It is decidedly so\n",
+    "#Without a doubt\n",
+    "#Reply hazy, try again\n",
+    "#Ask again later\n",
+    "#Better not tell you now\n",
+    "#My sources say no\n",
+    "#Outlook not so good\n",
+    "#Very doubtful\n",
+    "\n",
+    "# The output of the program will have the following format:\n",
+    "#[Name] asks: [Question]\n",
+    "#Magic 8-Ball’s answer: [Answer]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "7925f1af",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-08-30T20:38:50.897424Z",
+     "iopub.status.busy": "2024-08-30T20:38:50.896883Z",
+     "iopub.status.idle": "2024-08-30T20:38:50.919729Z",
+     "shell.execute_reply": "2024-08-30T20:38:50.918086Z"
+    },
+    "papermill": {
+     "duration": 0.03069,
+     "end_time": "2024-08-30T20:38:50.923886",
+     "exception": false,
+     "start_time": "2024-08-30T20:38:50.893196",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Question: Is it going to happen?\n",
+      "Magic 8-Ball's answer: Better not tell you now\n"
+     ]
+    }
+   ],
+   "source": [
+    "name = \"\"\n",
+    "\n",
+    "question = \"Is it going to happen?\"\n",
+    "\n",
+    "answer = \"\"\n",
+    "\n",
+    "import random\n",
+    "random_number = random.randint(1,9)\n",
+    "\n",
+    "if random_number == 1:\n",
+    "  answer = \"Yes - definitely\"\n",
+    "elif random_number == 2:\n",
+    "  answer = \"It is decidedly so\"\n",
+    "elif random_number == 3:\n",
+    "  answer = \"Without a doubt\"\n",
+    "elif random_number == 4:\n",
+    "  answer = \"Reply hazy, try again\"\n",
+    "elif random_number == 5:\n",
+    "  answer = \"Ask again later\"\n",
+    "elif random_number == 6:\n",
+    "  answer = \"Better not tell you now\"\n",
+    "elif random_number == 7:\n",
+    "  answer = \"My sources say no\"\n",
+    "elif random_number == 8:\n",
+    "  answer = \"Outlook not so good\"\n",
+    "elif random_number == 9:\n",
+    "  answer = \"Very doubtful\"\n",
+    "else:\n",
+    "  answer = \"Error\"\n",
+    "\n",
+    "if question == \"\":\n",
+    "  print(\"Please enter a question.\")\n",
+    "else:\n",
+    "    if name == \"\":\n",
+    "      print(\"Question: \" + question)\n",
+    "    else:\n",
+    "      print(name +\" asks: \" + question)\n",
+    "    print(\"Magic 8-Ball's answer: \" + answer)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [],
+   "dockerImageVersionId": 30761,
+   "isGpuEnabled": false,
+   "isInternetEnabled": true,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.14"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 3.584584,
+   "end_time": "2024-08-30T20:38:51.349122",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-08-30T20:38:47.764538",
+   "version": "2.6.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
